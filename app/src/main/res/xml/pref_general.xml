@@ -1,0 +1,77 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:title="Sent sms to phone number:"
+        android:key="PhoneNumberKey"
+        android:defaultValue="\0015550189"
+        android:maxLines="1"
+        android:maxLength="160"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        />
+
+    <EditTextPreference
+        android:title="Sms message:"
+        android:key="SmsMessageKey"
+        android:defaultValue="CODE74"
+        android:maxLines="1"
+        android:maxLength="160"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="text"
+        />
+
+    <EditTextPreference
+        android:title="Send at(yyyy-MM-dd HH:mm:ss):"
+        android:key="SendAtKey"
+        android:defaultValue="2022-01-01 11:10:00"
+        android:maxLines="1"
+        android:maxLength="19"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="text"
+        />
+
+    <ListPreference
+        android:title="Use this SIM to send the sms:"
+        android:key="UseSimKey"
+        android:summary="TO BE SET programmatically"
+        android:entries="@array/listSims"
+        android:entryValues="@array/listSimsValues"
+        />
+
+    <EditTextPreference
+        android:title="Recurrence interval(minutes):"
+        android:key="RecurrenceIntervalKey"
+        android:defaultValue="5"
+        android:summary="5"
+        android:maxLines="1"
+        android:maxLength="5"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="number"
+        />
+
+    <Preference
+        android:title="Start/Stop alarm"
+        android:key="StartStopAlarmKey"
+        />
+
+    <EditTextPreference
+        android:title="Alarm status:"
+        android:key="AlarmStatusKey"
+        android:summary="@string/pref_alarm_stopped"
+        android:defaultValue="@string/pref_alarm_stopped"
+        android:enabled="false"
+        />
+
+    <EditTextPreference
+        android:title="Times executed:"
+        android:key="TimesExecutedKey"
+        android:summary="0"
+        android:defaultValue="0"
+        android:enabled="false"
+        />
+
+
+</PreferenceScreen>

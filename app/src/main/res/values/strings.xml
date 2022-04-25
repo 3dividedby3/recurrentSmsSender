@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Recurrent Sms Sender</string>
+
+    <string name="pref_header_general">Sender Properties</string>
+
+    <string-array name="listSims">
+        <item>Sim 1</item>
+        <item>Sim 2</item>
+    </string-array>
+
+    <string-array name="listSimsValues">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="pref_alarm_started">Started</string>
+    <string name="pref_alarm_stopped">Stopped</string>
+
+    <string name="pref_start_alarm">Start sender</string>
+    <string name="pref_stop_alarm">Stop sender</string>
+
+</resources>
